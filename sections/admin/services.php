@@ -9,11 +9,11 @@ require $_SERVER['DOCUMENT_ROOT'] . "/weserve/services/user_service.php";
             <form action="<?php save_main_service()?>">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Service Category Name</label>
-                    <input class="form-control" id="exampleInputCategory" type="text" placeholder="Catogery">
+                    <input class="form-control" id="exampleInputCategory" type="text" placeholder="Catogery" name="serviceName">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputDesc">Description</label>
-                    <input class="form-control" id="exampleInputDesc" type="text" placeholder="Description">
+                    <input class="form-control" id="exampleInputDesc" type="text" placeholder="Description" name="description">
                 </div>
         </div>
         <button class="btn btn-primary pull-right m-md-4" type="submit">Add</button>

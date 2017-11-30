@@ -35,4 +35,10 @@ function sub_services_with_providers($mainServiceID)
     return $services;
 }
 
+function save_main_service_repo($serviceName,$description){
+    $dbCon = db_connect();
+    $sql = "INSERT INTO main_service (name, description) VALUES ('$serviceName','$description')";
+    $result = mysqli_query($dbCon,$sql);
+}
+
 

@@ -24,6 +24,8 @@ function get_sub_services_with_providers($id){
 }
 
 function save_main_service(){
-
+    $serviceName = $_POST["serviceName"];
+    $desc = $_POST["description"];
+    save_main_service_repo($serviceName,$desc);
 }
 
