@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if($userRole != null) {
         session_start();
         $_SESSION['login'] = true;
-        header("location:../sections/".$userRole."/overview.php");
+        header("location:../partials/".$userRole."/overview.php");
     }else{
         header("location:../login.php");
     }
